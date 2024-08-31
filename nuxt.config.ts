@@ -16,22 +16,7 @@ export default defineNuxtConfig({
     "~/assets/style/main.scss", // you should add main.scss somewhere in your app
   ],
 
-  plugins: [
-    '~/plugins/globalVariables.js'
-  ],
-
   ssr: false,
-
-  experimental: {
-      payloadExtraction: false
-  },
-
-  router: {
-      options: {
-          strict: false
-      }
-  },
-
   sourcemap: false,
   compatibilityDate: '2024-08-29',
 })
