@@ -3,7 +3,12 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
 
   app: {
-      baseURL: '/calculadora-de-cerveja/' // baseURL: '/<repository>/'
+      baseURL: '/calculadora-de-cerveja/', // baseURL: '/<repository>/'
+      buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
+      head: {
+        charset: 'utf-8',
+        viewport: 'width=device-width, initial-scale=1',
+      },  
   },
 
   css: [
@@ -15,7 +20,7 @@ export default defineNuxtConfig({
     '~/plugins/globalVariables.js'
   ],
 
-  ssr: true,
+  ssr: false,
 
   experimental: {
       payloadExtraction: false
