@@ -1,0 +1,27 @@
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    color: var(--text-color);
+    font-family: var(--font-base);
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust: exact !important;
+
+
+    @include print {
+
+        &::after {
+            display: none;
+        }
+    }
+}
+
+
+::selection {
+    background: var(--yellow);
+    color: var(--dark);
+}

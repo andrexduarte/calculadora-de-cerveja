@@ -1,0 +1,30 @@
+
+:root {
+
+    --light: #ffffff;
+    --dark: rgb(24 22 23);
+
+    --yellow: #F4B216;
+    --blue: #57C6D4;
+    --red-light: #F06541;
+    --red: #A25A4E;
+
+    --primary-color: var(--yellow);
+
+    --primary-font: 'PT Serif', serif;
+    --title-font: 'Share', sans-serif;
+    --font-base: "Jacques Francois", serif;
+}
+
+[data-user-theme=dark] {
+    --text-color: var(--light);
+    --bg-color: var(--dark);
+    --color-selection-bg: var(--yellow);
+    --color-selection-text: var(--dark);
+}
+
+[data-user-theme=liht] {
+    --text-color: var(--dark);
+    --bg-color: var(--light);
+
+}
